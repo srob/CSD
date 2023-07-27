@@ -7,7 +7,7 @@ public class PlayerTest {
     @Test
     public void testWarriorMove() {
         Player warrior = new Player("Warrior");
-        assertEquals("Warrior moves forward", warrior.move());
+        assertEquals("Warrior creeps forward", warrior.move());
     }
 
     @Test
