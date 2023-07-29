@@ -19,6 +19,6 @@ public class PlayerTest {
     @Test
     public void testRogueMove() {
         Player rogue = new Player("Rogue");
-        assertEquals("Rogue sneaks", rogue.move());
+        assertEquals("Rogue peaks", rogue.move());
     }
 }
