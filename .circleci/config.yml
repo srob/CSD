@@ -11,7 +11,7 @@ commands:
 
   notify_slack_pass:
     steps:
-      - slack/motify:
+      - slack/notify:
           event: pass
           template: basic_success_1
 
