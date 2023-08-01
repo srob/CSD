@@ -1,11 +1,25 @@
 version: 2.1
+orbs:
+  slack: circleci/slack@4.12.5
+
 jobs:
   build:
     working_directory: ~/project
     docker:
       - image: cimg/openjdk:20.0.1
+
     steps:
       - checkout
       - run: mvn clean
       - run: mvn test
       - run: mvn install
+
+      - slack/notify:
+          channel: ci
+          event: pass
+          template: basic_pass_1
+
+      - slack/notify:
+          channel: ci
+          event: fail
+          template: basic_fail_1
