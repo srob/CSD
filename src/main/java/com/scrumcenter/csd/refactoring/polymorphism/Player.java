@@ -11,7 +11,7 @@ public class Player {
         return switch (playerType) {
             case "Warrior" -> "Warrior moves forward";
             case "Mage" -> "Mage teleports";
-            case "Rogue" -> "Rogue sneaks";
+            case "Rogue" -> "Rpgue sneaks";
             default -> throw new IllegalArgumentException("Invalid player type");
         };
     }
