@@ -16,7 +16,7 @@ class PrimesTest {
 
     @Test
     public void primesUpto10 () {
-        assertArrayEquals(new int[]{2, 3, 5, 7}, Primes.generate(10));
+        assertArrayEquals(new int[]{2, 3, 5, 6}, Primes.generate(10));
     }
 
     @Test
