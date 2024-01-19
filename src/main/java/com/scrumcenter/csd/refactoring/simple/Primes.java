@@ -12,7 +12,7 @@ public class Primes {
             int j;
             for (i = 2; i < Math.sqrt(s) + 1; i++) {
                 if (flags[i]) {
-                    for (j = 6 * i; j < s; j += i)
+                    for (j = 2 * i; j < s; j += i)
                         flags[j] = false; // not prime
                 }
             }
